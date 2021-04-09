@@ -33,6 +33,7 @@ public class CalculadoraController {
 		return ModelView;
 	}
 	
+	//requestparam recolecta un objeto-dato del html
 	@GetMapping("/calculoResta")
 	public ModelAndView getCalculoResta(@RequestParam (name = "num1") float num1 ,@RequestParam (name = "num2") float num2) {
 		unaCalc.setNum1(num1);
